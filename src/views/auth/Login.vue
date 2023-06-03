@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col md:flex-row h-screen w-screen">
     <!-- Picture side -->
-    <div class="relative md:w-2/5">
+    <div class="hidden relative md:block md:w-2/5">
       <img
         src="../../assets/images/login-bg-img.png"
         alt="Background Image"
@@ -19,8 +19,8 @@
     </div>
 
     <!-- Login form side -->
-    <div class="flex items-center justify-center bg-gray-100 md:w-3/5">
-      <div class="w-full max-w-md">
+    <div class="flex justify-center py-10 md:w-3/5 h-full">
+      <div class="w-full max-w-lg">
         <div class="flex">
           <!-- Login tab -->
           <button
@@ -32,7 +32,6 @@
             @click="activeTab = 'login'"
           >Login</button>
 
-          <!-- Register tab -->
           <button
             :class="{
             'border-b-blue font-bold': activeTab === 'register',
@@ -45,67 +44,64 @@
 
         <!-- Login form -->
 
-        <div class v-if="activeTab == 'login'">
-          <h2 class="text-3xl text-center mb-6">Welcome Back</h2>
+        <div class="p-5" v-if="activeTab == 'login'">
+          <h2 class="text-3xl text-center my-6">Welcome Back</h2>
 
-          <!-- Email input -->
-          <div class="mb-4">
-            <label for="email" class="block mb-2">Email</label>
+          <div class="my-5">
+            <label for="email" class="block mb-2">Email address</label>
             <input
               id="email"
               type="email"
               v-model="email"
-              class="w-full border border-gray-300 rounded px-3 py-2"
+              class="w-full border border-gray-300 rounded px-3 py-3"
               placeholder="Enter your email"
             />
           </div>
 
-          <!-- Password input -->
-          <div class="mb-4">
+          <div class="my-5">
             <label for="password" class="block mb-2">Password</label>
             <input
               id="password"
               type="password"
               v-model="password"
-              class="w-full border border-gray-300 rounded px-3 py-2"
+              class="w-full border border-gray-300 rounded px-3 py-3"
               placeholder="Enter your password"
             />
           </div>
 
-          <!-- Sign in button -->
-          <button class="w-full bg-blue-500 text-white rounded px-4 py-2" @click="signIn">Sign In</button>
+          <button class="w-full bg-[#543EE0] text-white rounded px-4 py-2" @click="signIn">Login</button>
         </div>
-        <!-- Register form -->
 
-        <div class v-if="activeTab == 'register'">
-          <h2 class="text-3xl text-center mb-6">Register a Writer/Reader</h2>
+        <!-- Register -->
+        <div class="my-[1rem] p-5" v-if="activeTab == 'register'">
+          <h2 class="text-3xl text-center my-3">Register as a Writer/Reader</h2>
 
           <!-- Email input -->
-          <div class="mb-4">
-            <label for="email" class="block mb-2">Email</label>
+          <div class="my-5">
+            <label for="email" class="block mb-2">Email address</label>
             <input
               id="email"
               type="email"
               v-model="email"
-              class="w-full border border-gray-300 rounded px-3 py-2"
+              class="w-full border border-gray-300 rounded px-3 py-3"
               placeholder="Enter your email"
             />
           </div>
 
           <!-- Password input -->
-          <div class="mb-4">
+          <div class="my-5">
             <label for="password" class="block mb-2">Password</label>
             <input
               id="password"
               type="password"
               v-model="password"
-              class="w-full border border-gray-300 rounded px-3 py-2"
+              class="w-full border border-gray-300 rounded px-3 py-3"
               placeholder="Enter your password"
             />
           </div>
 
           <!-- Sign in button -->
-          <button class="w-full bg-blue-500 text-white rounded px-4 py-2" @click="signIn">Sign In</button>
+          <button class="w-full bg-[#543EE0] text-white rounded px-4 py-2" @click="signIn">Register</button>
         </div>
       </div>
     </div>
@@ -115,7 +111,7 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue';
 
-const username = ref('');
+const email = ref('');
 const password = ref('');
 const showPassword = ref(false);
 const handleLogin = async () => {};
