@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref } from "vue";
+import { ref } from 'vue';
 
 defineProps<{ msg: string }>();
 
@@ -11,7 +11,7 @@ const count2 = ref(3);
   <h1>{{ msg }}</h1>
 
   <div class="card">
-    <button type="button" @click="count++">count is {{ count }}</button>
+    <button class="border border-green-600 p-2" type="button" @click="count++">count is {{ count }}</button>
     <button type="button" @click="count2++">count is {{ count2 }}</button>
     <p>
       Edit
