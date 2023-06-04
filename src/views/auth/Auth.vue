@@ -19,8 +19,13 @@
       </div>
 
       <!-- Login form side -->
-      <div class="flex justify-center py-10 md:w-3/5 h-full">
+      <div class="flex justify-center py-6 md:w-3/5 h-full">
         <div class="w-full max-w-lg">
+          <router-link to="/">
+            <div class="w-24">
+              <img src="../../assets/chatter-logo.png" alt="chatter logo" />
+            </div>
+          </router-link>
           <div class="flex">
             <!-- Login tab -->
             <button
