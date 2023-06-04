@@ -5,7 +5,7 @@
         <img
           src="../../assets/images/login-bg-img.png"
           alt="Background Image"
-          class="object-cover w-full h-full"
+          class="object-cover h-auto w-auto md:w-full md:h-full"
         />
         <div class="absolute inset-0 bg-black opacity-60"></div>
         <div class="absolute inset-0 flex items-center justify-center">
