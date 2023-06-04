@@ -7,10 +7,10 @@
     />
     <div class="absolute inset-0 bg-black opacity-[0.65] w-full h-full"></div>
     <div class="absolute inset-0 flex items-center justify-center">
-      <div class="p-3 lg:w-3/5 mx-auto">
+      <div class="p-3 lg:w-3/5 mx-auto flex items-center justify-center">
         <h1 class="text-2xl md:text-4xl lg:text-[2.8rem] text-white font-bold mb-6">
           <span class="block">Welcome to Chatter: A Haven for Text-</span>
-          <span class="block my-8">Based Content</span>
+          <span class="ml-2 md:ml-0 md:block my-8">Based Content</span>
         </h1>
         <h2 class="text-lg md:text-md lg:text-xl text-white mb-8">
           Unleash the Power of Words, Connect with Like-minded Readers

@@ -23,7 +23,7 @@
           <button
             @click.prevent="goToAuthPage('register')"
             type="button"
-            class="text-white bg-[#543EE0] hover:bg-opacity-80 hover:text-white font-medium rounded-lg text-sm px-4 lg:px-10 py-3 dark:bg-purple-600 dark:hover:bg-purple-700 focus:outline-none dark:focus:ring-purple-800 hover:scale-105 transition duration-200 ease-in-out mx-1 dark:text-white"
+            class="text-white bg-[#543EE0] hover:bg-opacity-80 hover:text-white font-medium rounded-lg text-sm px-4 lg:px-10 py-3 border dark:border-[#543EE0] dark:hover:bg-purple-700 focus:outline-none dark:focus:ring-purple-800 hover:scale-105 transition duration-200 ease-in-out mx-1 dark:text-white"
           >Signup</button>
         </div>
         <button
