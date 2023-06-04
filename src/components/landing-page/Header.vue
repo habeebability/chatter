@@ -3,7 +3,7 @@
     <img
       src="../../assets/images/hero-bg.png"
       alt="Background Image"
-      class="object-cover w-full h-full"
+      class="object-contain md:object-cover w-full h-full"
     />
     <div class="absolute inset-0 bg-black opacity-[0.65] w-full h-full"></div>
     <div class="absolute inset-0 flex items-center justify-center">
@@ -21,7 +21,7 @@
           </h2>
           <button
             type="button"
-            class="text-white bg-[#543EE0] hover:bg-opacity-80 hover:text-white font-medium rounded-lg text-sm px-4 lg:px-10 py-3 dark:bg-purple-600 dark:hover:bg-purple-700 focus:outline-none dark:focus:ring-purple-800 hover:scale-105 transition duration-200 ease-in-out mx-1"
+            class="text-white bg-[#543EE0] hover:bg-opacity-80 hover:text-white font-medium rounded-lg text-sm px-4 lg:px-10 py-3 dark:bg-bg-[#543EE0] dark:hover:hover:bg-opacity-80 focus:outline-none dark:focus:ring-purple-800 hover:scale-105 transition duration-200 ease-in-out mx-1"
           >Get started</button>
         </div>
       </div>
