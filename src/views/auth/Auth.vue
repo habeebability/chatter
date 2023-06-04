@@ -186,6 +186,9 @@
 
 <script setup lang="ts">
 import { ref, computed } from 'vue';
+import { useRoute } from 'vue-router';
+
+const route = useRoute();
 
 const loginFormData = ref({
   email: '',
@@ -204,29 +207,10 @@ const signupFormData = ref({
 const showPassword = ref(false);
 const handleLogin = async () => {};
 
-const activeTab = ref('login');
-
-// const indicatorOffset = computed(() => {
-//   if (activeTab.value === 'login') {
-//     return '0%';
-//   } else if (activeTab.value === 'register') {
-//     return '50%';
-//   }
-// });
+const activeTab = ref(route.params.authType ? route.params.authType : 'login');
 
 const indicatorOffset = computed(() => (activeTab.value === 'login' ? '0%' : '50%'));
 </script>
 
 <style scoped>
-/* .gradient-color {
-  background: linear-gradient(
-    127.55deg,
-    rgba(18, 35, 53, 0.98) 8.34%,
-    rgba(148, 0, 240, 0.79) 92.26%
-  );
-} */
-
-/* .gradient-color {
-  background: linear-gradient(to bottom, rgba(84, 13, 110, 0.2), rgba(84, 13, 110, 0.5));
-} */
 </style>

@@ -16,10 +16,12 @@
       >
         <div class="buttons">
           <button
+            @click.prevent="goToAuthPage('login')"
             type="button"
             class="text-[#111111] border border-[#543EE0] hover:text-[#543EE0] hover:bg-purple-100/10 font-medium rounded-lg text-sm px-4 lg:px-10 py-3 dark:bg-purple-600 dark:hover:bg-purple-700 focus:outline-none dark:focus:ring-purple-800 hover:scale-105 transition duration-200 ease-in-out mx-1"
           >Login</button>
           <button
+            @click.prevent="goToAuthPage('register')"
             type="button"
             class="text-white bg-[#543EE0] hover:bg-opacity-80 hover:text-white font-medium rounded-lg text-sm px-4 lg:px-10 py-3 dark:bg-purple-600 dark:hover:bg-purple-700 focus:outline-none dark:focus:ring-purple-800 hover:scale-105 transition duration-200 ease-in-out mx-1"
           >Signup</button>
@@ -86,6 +88,13 @@
 </template>
 
 <script setup>
+import { useRouter } from 'vue-router';
+
+const router = useRouter();
+
+const goToAuthPage = (authType) => {
+  router.push(`/auth/${authType}`);
+};
 </script>
 
 <style lang="scss" scoped>

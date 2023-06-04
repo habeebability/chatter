@@ -10,7 +10,7 @@ const LandingPage = () => import('../views/LandingPage.vue');
 const routes = [
   {
     name: 'auth',
-    path: '/auth',
+    path: '/auth/:authType',
     component: Auth
   },
   {
