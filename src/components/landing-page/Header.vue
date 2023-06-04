@@ -40,9 +40,6 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
-
-const backgroundImage = ref('../../assets/images/hero-bg.jpg');
 </script>
 
 

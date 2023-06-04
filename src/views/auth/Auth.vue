@@ -71,7 +71,10 @@
               />
             </div>
 
-            <button class="w-full bg-[#543EE0] text-white rounded px-4 py-2" @click="signIn">Login</button>
+            <button
+              class="w-full bg-[#543EE0] text-white rounded px-4 py-2"
+              @click="handleLogin"
+            >Login</button>
           </div>
 
           <!-- Register -->
@@ -162,17 +165,23 @@
               <!-- Sign up button -->
               <button
                 class="w-full bg-[#543EE0] text-white rounded px-4 py-1 my-1"
-                @click="signIn"
+                @click="handleLogin"
               >Create account</button>
-              <button class="w-full border border-gray-200 rounded px-4 py-1 my-1" @click="signIn">
+              <button
+                class="w-full border border-gray-200 rounded px-4 py-1 my-1"
+                @click="handleLogin"
+              >
                 <span class="flex justify-center items-center">
-                  <img class="mx-1" src="../../assets/icons/google-logo.png" alt />
+                  <img class="mx-1" src="../../assets/icons/google-logo.png" alt="google" />
                   Sign up with google
                 </span>
               </button>
-              <button class="w-full border border-gray-200 rounded px-4 py-1 my-1" @click="signIn">
+              <button
+                class="w-full border border-gray-200 rounded px-4 py-1 my-1"
+                @click="handleLogin"
+              >
                 <span class="flex justify-center items-center">
-                  <img class="mx-1" src="../../assets/icons/linkedin-logo.png" alt />
+                  <img class="mx-1" src="../../assets/icons/linkedin-logo.png" alt="linkedin" />
                   Sign up with Linkedin
                 </span>
               </button>
@@ -185,7 +194,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed } from 'vue';
+import { ref } from 'vue';
 import { useRoute } from 'vue-router';
 
 const route = useRoute();
@@ -204,12 +213,10 @@ const signupFormData = ref({
   passwordConfirm: ''
 });
 
-const showPassword = ref(false);
+// const showPassword = ref(false);
 const handleLogin = async () => {};
 
 const activeTab = ref(route.params.authType ? route.params.authType : 'login');
-
-const indicatorOffset = computed(() => (activeTab.value === 'login' ? '0%' : '50%'));
 </script>
 
 <style scoped>

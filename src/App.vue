@@ -1,6 +1,4 @@
-<script setup lang="ts">
-import Auth from './views/auth/Auth.vue';
-</script>
+
 
 <template>
   <div class>
@@ -12,9 +10,6 @@ import Auth from './views/auth/Auth.vue';
         <component :is="Component"></component>
       </transition>
     </router-view>
-
-    <!-- app auth -->
-    <!-- <Auth /> -->
   </div>
 </template>
 
