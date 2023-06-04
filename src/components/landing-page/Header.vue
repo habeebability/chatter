@@ -5,10 +5,10 @@
       alt="Background Image"
       class="object-contain md:object-cover w-full h-full"
     />
-    <div class="absolute inset-0 bg-black opacity-[0.65] h-2/3 w-full md:h-full"></div>
+    <div class="absolute inset-0 bg-black opacity-[0.65] h-4/5 w-full md:h-full"></div>
     <div class="absolute inset-0 flex items-center justify-center">
       <div class="p-3 lg:w-3/5 mx-auto flex items-center justify-center">
-        <div>
+        <div class="mt-[2rem] lg:mt-0">
           <h1 class="text-2xl md:text-4xl lg:text-[2.8rem] text-white font-bold mb-6">
             <span class="block">Welcome to Chatter: A Haven for Text-</span>
             <span class="ml-2 md:ml-0 md:block my-8">Based Content</span>
