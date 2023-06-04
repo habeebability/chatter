@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Login from './views/auth/Login.vue';
+import Auth from './views/auth/Auth.vue';
 </script>
 
 <template>
@@ -13,11 +13,8 @@ import Login from './views/auth/Login.vue';
       </transition>
     </router-view>
 
-    <!-- Player -->
-    <AppPlayer />
-
     <!-- app auth -->
-    <Login />
+    <!-- <Auth /> -->
   </div>
 </template>
 

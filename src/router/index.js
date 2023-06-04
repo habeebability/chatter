@@ -4,11 +4,13 @@ import { createRouter, createWebHistory } from 'vue-router';
 // Lazy Loading components, only load when needed,
 // const Home = () => import('@/views/Home.vue');
 
+const Auth = () => import('../views/auth/Auth.vue');
+
 const routes = [
   {
     name: 'home',
-    path: '/'
-    // component: Home
+    path: '/',
+    component: Auth
   },
 
   {
