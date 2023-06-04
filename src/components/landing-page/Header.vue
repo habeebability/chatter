@@ -1,16 +1,4 @@
 <template>
-  <!-- <div
-    class="header-section py-20 px-6 md:px-12 lg:px-20 xl:px-32"
-    :style="{ backgroundImage: `url(${backgroundImage})` }"
-  >
-    <h1
-      class="text-4xl md:text-5xl lg:text-6xl text-white font-bold mb-6"
-    >Welcome to Chatter: A Haven for Text-Based Content</h1>
-    <h2
-      class="text-lg md:text-xl lg:text-2xl text-white mb-8"
-    >Unleash the Power of Words, Connect with Like-minded Readers and Writers</h2>
-    <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">Get Started</button>
-  </div>-->
   <div class="w-screen h-screen">
     <img
       src="../../assets/images/hero-bg.png"
@@ -19,7 +7,7 @@
     />
     <div class="absolute inset-0 bg-black opacity-[0.65] w-full h-full"></div>
     <div class="absolute inset-0 flex items-center justify-center">
-      <div class="lg:w-3/5 mx-auto">
+      <div class="p-3 lg:w-3/5 mx-auto">
         <h1 class="text-2xl md:text-4xl lg:text-[2.8rem] text-white font-bold mb-6">
           <span class="block">Welcome to Chatter: A Haven for Text-</span>
           <span class="block my-8">Based Content</span>
