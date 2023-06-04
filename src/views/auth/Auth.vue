@@ -112,7 +112,7 @@
                     id="joinAs"
                     class="w-full border border-gray-300 rounded px-3 py-3 cursor-pointer"
                   >
-                    <option value selected disabled>Select Option</option>
+                    <option value selected disabled>Select reader/writer</option>
                     <option value="writer">Writer</option>
                     <option value="reader">Reader</option>
                     <!-- <option v-for="group in groups" :key="group" :value="group">{{ group.label }}</option> -->

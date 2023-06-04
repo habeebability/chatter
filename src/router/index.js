@@ -5,12 +5,18 @@ import { createRouter, createWebHistory } from 'vue-router';
 // const Home = () => import('@/views/Home.vue');
 
 const Auth = () => import('../views/auth/Auth.vue');
+const LandingPage = () => import('../views/LandingPage.vue');
 
 const routes = [
   {
+    name: 'auth',
+    path: '/auth',
+    component: Auth
+  },
+  {
     name: 'home',
     path: '/',
-    component: Auth
+    component: LandingPage
   },
 
   {
