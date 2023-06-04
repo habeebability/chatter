@@ -1,18 +1,44 @@
 # Vue 3 + TypeScript + Vite
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+# Chatter App
 
-## Recommended IDE Setup
+Chatter is a multi-functional platform where authors and readers can have access to their own content. It aims to be a traditional bookworm’s heaven and a blog to get access to more text based content. Our vision is to foster an inclusive and vibrant community where diversity is celebrated. We encourage open-mindedness and respect for all individuals, regardless of their backgrounds or beliefs. By promoting dialogue and understanding, we strive
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## LINK
 
-## Type Support For `.vue` Imports in TS
+[Chatter](https://chatter-hq.netlify.app)
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+## Features
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+- Responsive design.
+- Typescript integration for prompt error tracking.
+- Tailwind CSS integration for efficient styling and customization.
+- Vue router
+- Pinia and Pinia Persistedstate for state management, ensuring a robust and scalable application.
 
-1. Disable the built-in TypeScript Extension
-   1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-   2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+## Prerequisites
+
+Before running the application, ensure that you have the following installed:
+
+- Node.js (version >= 14.0.0)
+- Npm (version >= 7.0.0)
+
+## Installation
+
+1. Clone the repository:
+
+2. Navigate to the project directory:
+
+3. Install dependencies
+
+## Packages used
+
+#### Vue3
+
+#### Vite
+
+#### Typescript
+
+#### Tailwindcss
+
+#### Vue router
