@@ -3,7 +3,7 @@
     <img
       src="../../assets/images/hero-bg.png"
       alt="Background Image"
-      class="object-contain md:object-cover w-full h-full"
+      class="object-cover w-full h-auto"
     />
     <div class="absolute inset-0 bg-black opacity-[0.65] w-full h-full"></div>
     <div class="absolute inset-0 flex items-center justify-center">
