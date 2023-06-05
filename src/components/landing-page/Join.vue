@@ -1,6 +1,6 @@
 <template>
   <div
-    class="mt-10 flex px-5 lg:px-24 py-24 md:flex-row flex-col items-start w-screen bg-[#FFEDCC] bg-opacity-50"
+    class="mt-10 flex px-5 lg:px-24 py-24 md:flex-row flex-col items-center justify-center gap-5 md:items-start w-screen bg-[#FFEDCC] bg-opacity-50"
   >
     <!-- <div
       class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center"
@@ -12,7 +12,7 @@
     </div>
     <div class="lg:w-4/6">
       <p
-        class="my-[2rem] leading-relaxed"
+        class="lg:my-[2rem] leading-relaxed"
       >"Chatter has become an integral part of my online experience. As a user of this incredible blogging platform, I have discovered a vibrant community of individuals who are passionate about sharing their ideas and engaging in thoughtful discussions.”</p>
 
       <p>

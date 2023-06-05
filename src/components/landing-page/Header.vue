@@ -1,11 +1,13 @@
 <template>
   <div class="w-screen h-screen">
-    <img
-      src="../../assets/images/hero-bg.png"
-      alt="Background Image"
-      class="object-contain md:object-cover w-full h-full"
-    />
-    <div class="absolute inset-0 bg-black opacity-[0.65] h-4/5 w-full md:h-full"></div>
+    <div class="h-full flex flex-shrink-0">
+      <img
+        src="../../assets/images/hero-bg.png"
+        alt="Background Image"
+        class="md:object-cover w-full h-auto"
+      />
+    </div>
+    <div class="absolute inset-0 bg-black opacity-[0.65] h-auto w-full md:h-full"></div>
     <div class="absolute inset-0 flex items-center justify-center">
       <div class="p-3 lg:w-3/5 mx-auto flex items-center justify-center">
         <div class="mt-[2rem] lg:mt-0">

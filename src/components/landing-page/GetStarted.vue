@@ -1,6 +1,6 @@
 <template>
   <div
-    class="container mx-auto flex px-5 py-24 gap-3 lg:gap-0 md:flex-row flex-col items-start w-screen"
+    class="container mx-auto flex px-5 py-10 md:py-24 gap-5 lg:gap-0 md:flex-row flex-col items-start w-screen"
   >
     <div class="lg:max-w-lg lg:w-full md:w-1/2">
       <img

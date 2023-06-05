@@ -10,8 +10,8 @@
           class="text-left my-5 text-lg"
         >Our goal is to make writers and readers see our platform as their next heaven for blogging, ensuring ease in interactions, connecting with like-minded peers, have access to favorite content based on interests and able to communicate your great ideas with people</p>
       </div>
-      <div class="flex flex-wrap -m-4">
-        <div class="p-4 md:w-1/3">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 -m-4">
+        <div class="p-4">
           <div class="flex rounded-lg h-full border border-[#D0D0D0] p-8 flex-col">
             <div class="flex items-center mb-3">
               <svg
@@ -40,7 +40,7 @@
             </div>
           </div>
         </div>
-        <div class="p-4 md:w-1/3">
+        <div class="p-4">
           <div class="flex rounded-lg h-full border border-[#D0D0D0] p-8 flex-col">
             <div class="flex items-center mb-3">
               <svg
@@ -65,7 +65,7 @@
             </div>
           </div>
         </div>
-        <div class="p-4 md:w-1/3">
+        <div class="p-4">
           <div class="flex rounded-lg h-full border border-[#D0D0D0] p-8 flex-col">
             <div class="flex items-center mb-3">
               <svg
