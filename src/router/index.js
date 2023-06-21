@@ -6,6 +6,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 
 const Auth = () => import('../views/auth/Auth.vue');
 const LandingPage = () => import('../views/LandingPage.vue');
+const MainLayout = () => import('../views/MainLayout.vue');
 
 const routes = [
   {
@@ -17,6 +18,11 @@ const routes = [
     name: 'home',
     path: '/',
     component: LandingPage
+  },
+  {
+    name: 'dashboard',
+    path: '/dashboard',
+    component: MainLayout
   },
 
   {

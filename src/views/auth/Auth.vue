@@ -200,9 +200,9 @@
 
 <script setup lang="ts">
 import { ref } from 'vue';
-import { useRoute } from 'vue-router';
-
+import { useRoute, useRouter } from 'vue-router';
 const route = useRoute();
+const router = useRouter();
 
 const loginFormData = ref({
   email: '',
@@ -219,7 +219,9 @@ const signupFormData = ref({
 });
 
 // const showPassword = ref(false);
-const handleLogin = async () => {};
+const handleLogin = async () => {
+  router.push('/dashboard');
+};
 
 const activeTab = ref(route.params.authType ? route.params.authType : 'login');
 </script>
