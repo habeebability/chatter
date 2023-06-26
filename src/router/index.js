@@ -22,6 +22,44 @@ const routes = [
   {
     name: 'dashboard',
     path: '/dashboard',
+
+    component: MainLayout,
+    children: [
+      {
+        name: 'dashboard',
+        path: '/dashboard',
+        component: () => import('../views/Dashboard.vue')
+        // component: () => import('../views/dashboard/Dashboard.vue')
+      },
+      {
+        name: 'bookmarks',
+        path: '/bookmarks',
+        component: () => import('../views/Dashboard.vue')
+        // component: () => import('../views/dashboard/Dashboard.vue')
+      },
+      {
+        name: 'blogs',
+        path: '/blogs',
+        component: () => import('../views/Dashboard.vue')
+        // component: () => import('../views/dashboard/Dashboard.vue')
+      },
+      {
+        name: 'drafts',
+        path: '/drafts',
+        component: () => import('../views/Dashboard.vue')
+        // component: () => import('../views/dashboard/Dashboard.vue')
+      },
+      {
+        name: 'analytics',
+        path: '/analytics',
+        component: () => import('../views/Dashboard.vue')
+        // component: () => import('../views/dashboard/Dashboard.vue')
+      }
+    ]
+  },
+  {
+    name: 'bookmarks',
+    path: '/bookmarks',
     component: MainLayout
   },
 
