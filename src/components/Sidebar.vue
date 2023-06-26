@@ -80,7 +80,8 @@
           <div>
             <router-link v-for="tag in tags" :key="tag.id" class="flex items-center px-3 py-2 mt-4 duration-200"
               :class="route.name == tag.name ? 'text-blue-700 hover:text-opacity-50' : ' text-gray-500 hover:text-blue-700'"
-              :to="`/${tag.path}`">
+              :to="`/${tag.path}`
+                ">
 
 
               <span class="mx-4">{{ tag.name }}</span>

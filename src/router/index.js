@@ -6,8 +6,11 @@ import { createRouter, createWebHistory } from 'vue-router';
 
 const Auth = () => import('../views/auth/Auth.vue');
 const LandingPage = () => import('../views/LandingPage.vue');
-const MainLayout = () => import('../views/MainLayout.vue');
-
+// const MainLayout = () => import('../views/MainLayout.vue');
+import Dashboard from '../views/Dashboard.vue';
+import MainLayout from '../views/MainLayout.vue';
+import CreatePost from '../views/CreatePost.vue';
+import RenderChildren from '../views/RenderChildren.vue';
 const routes = [
   {
     name: 'auth',
@@ -28,7 +31,21 @@ const routes = [
       {
         name: 'dashboard',
         path: '/dashboard',
-        component: () => import('../views/Dashboard.vue')
+        redirect: { name: 'dashboard' },
+        component: RenderChildren,
+        children: [
+          {
+            name: 'dashboard',
+            path: '/dashboard',
+            component: Dashboard
+          },
+          {
+            name: 'create-post',
+            path: '/create-post',
+            component: CreatePost
+          }
+        ]
+        // component: () => import('../views/Dashboard.vue')
         // component: () => import('../views/dashboard/Dashboard.vue')
       },
       {
@@ -62,6 +79,11 @@ const routes = [
     path: '/bookmarks',
     component: MainLayout
   },
+  {
+    name: 'blank',
+    path: '/blank',
+    component: () => import('../views/Blank.vue')
+  },
 
   {
     path: '/:catchAll(.*)*',
@@ -71,7 +93,7 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes,
-  linkExactActiveClass: 'text-yellow-500'
+  linkExactActiveClass: 'text-blue-500'
 });
 
 // Global Navigation Guard

@@ -10,7 +10,7 @@
                         Explore different content you’d love </p>
                 </div>
                 <div class="text-end my-2 lg:m-0">
-                    <button
+                    <button @click="createPost"
                         class="flex-shrink-0 px-4 py-3 text-base font-semibold text-white bg-[#543EE0] rounded-lg shadow-md hover:bg-opacity-50 focus:outline-none focus:ring-2  focus:ring-offset-2 focus:ring-offset-purple-200"
                         type="submit">
                         Post a content
@@ -19,17 +19,43 @@
             </div>
 
 
-            <div class="flex justify-between card border border-gray-200 p-3 rounded-lg">
+            <!-- <div class="flex justify-between card border border-gray-200 p-3 rounded-lg">
                 <div v-for="(tab, index) in tabs" :key="index" :class="{
                     'border-b-4 border-purple-500': activeTab === tab,
                     'text-gray-500 hover:text-gray-700 cursor-pointer': activeTab !== tab
-                }" @click="activeTab = tab">
+                }" >
                     <p class="">
 
                         {{ tab }}
                     </p>
                 </div>
+            </div> -->
+
+
+            <div class="border border-gray-200 rounded-lg">
+
+                <div class="text-sm font-medium text-center text-gray-500 border-b border-gray-200 ">
+                    <ul class="flex flex-wrap -mb-px">
+
+                        <li @click="activeTab = tab" v-for="(tab, index) in tabs" :key="index" class="">
+                            <span class="inline-block p-4 border-b-2  rounded-t-lg active " :class="{
+                                'text-purple-600 border-purple-600': activeTab === tab,
+                                'text-gray-500 hover:text-gray-700 cursor-pointer': activeTab !== tab
+                            }" aria-current="page">
+                                {{ tab }}
+                            </span>
+                        </li>
+
+                        <!-- <li class="mr-2">
+                            <a href="#"
+                                class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 ">
+                                Live
+                            </a>
+                        </li> -->
+                    </ul>
+                </div>
             </div>
+
 
             <div class="border border-gray-200 my-1 rounded-lg">
                 <div class="flex items-start space-x-4 p-4">
@@ -123,9 +149,16 @@
 
 <script setup lang="ts">
 import { ref } from 'vue';
+import { useRouter } from 'vue-router';
+const router = useRouter();
 
 const tabs = ref(['For you', 'Featured', 'Recent']);
 const activeTab = ref('For you');
+
+const createPost = () => {
+    console.log('create post');
+    router.push('/create-post');
+};
 
 </script>
 
